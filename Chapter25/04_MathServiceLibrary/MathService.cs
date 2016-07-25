@@ -1,0 +1,20 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.Serialization;
+using System.ServiceModel;
+using System.Text;
+using System.Threading;
+
+namespace _04_MathServiceLibrary
+{
+  internal class MathService : IBasicMath
+  {
+    public int Add(int x, int y)
+    {
+      // Эмулировать длительный запрос
+      Thread.Sleep(5000);
+      return x + y;
+    }
+  }
+}
