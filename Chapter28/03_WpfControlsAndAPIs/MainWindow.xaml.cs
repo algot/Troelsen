@@ -34,7 +34,7 @@ namespace _03_WpfControlsAndAPIs
       PopulateDocument();
       EnableAnnotations();
 
-      btnSaveDoc.Click += (o, s)=>
+      //btnSaveDoc.Click += (o, s)=>
     }
 
     private void RadioButtonClicked(object sender, RoutedEventArgs e)

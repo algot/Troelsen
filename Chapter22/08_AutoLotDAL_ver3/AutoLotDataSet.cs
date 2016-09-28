@@ -2,9 +2,11 @@
 {
 }
 
-namespace AutoLotDAL {
-    
-    
-    public partial class AutoLotDataSet {
-    }
+namespace AutoLotDAL
+{
+
+
+  public partial class AutoLotDataSet
+  {
+  }
 }

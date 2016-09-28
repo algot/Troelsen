@@ -376,7 +376,7 @@ namespace AutoLotDAL {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class CustomersDataTable : global::System.Data.DataTable, global::System.Collections.IEnumerable {
+        public partial class CustomersDataTable : global::System.Data.TypedTableBase<CustomersRow> {
             
             private global::System.Data.DataColumn columnCustId;
             
@@ -494,12 +494,6 @@ namespace AutoLotDAL {
             public CustomersRow FindByCustId(int CustId) {
                 return ((CustomersRow)(this.Rows.Find(new object[] {
                             CustId})));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public virtual global::System.Collections.IEnumerator GetEnumerator() {
-                return this.Rows.GetEnumerator();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -672,7 +666,7 @@ namespace AutoLotDAL {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class InventoryDataTable : global::System.Data.DataTable, global::System.Collections.IEnumerable {
+        public partial class InventoryDataTable : global::System.Data.TypedTableBase<InventoryRow> {
             
             private global::System.Data.DataColumn columnCarId;
             
@@ -801,12 +795,6 @@ namespace AutoLotDAL {
             public InventoryRow FindByCarId(int CarId) {
                 return ((InventoryRow)(this.Rows.Find(new object[] {
                             CarId})));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public virtual global::System.Collections.IEnumerator GetEnumerator() {
-                return this.Rows.GetEnumerator();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -983,7 +971,7 @@ namespace AutoLotDAL {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class OrdersDataTable : global::System.Data.DataTable, global::System.Collections.IEnumerable {
+        public partial class OrdersDataTable : global::System.Data.TypedTableBase<OrdersRow> {
             
             private global::System.Data.DataColumn columnOrderId;
             
@@ -1107,12 +1095,6 @@ namespace AutoLotDAL {
             public OrdersRow FindByOrderId(int OrderId) {
                 return ((OrdersRow)(this.Rows.Find(new object[] {
                             OrderId})));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public virtual global::System.Collections.IEnumerator GetEnumerator() {
-                return this.Rows.GetEnumerator();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
